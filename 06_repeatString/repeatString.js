@@ -2,12 +2,14 @@ const repeatString = function(string, num){
     if (num < 0){
         return 'ERROR';
     }
-    string = '';
+    let result = '';
     for (let i = 0; i < num; i++){
-        string.repeat(num)
+        result += string;
     }
-    return string;
+    return result;
 };
+
+console.log(repeatString('hey', 3)); // heyheyhey
 
 // Do not edit below this line
 module.exports = repeatString;
